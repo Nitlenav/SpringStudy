@@ -1,6 +1,4 @@
 package net.proselyte.springioc.inheritance;
 
-public class Message {
-
-
+public class MessageToYou {
 }
