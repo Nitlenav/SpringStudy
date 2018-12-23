@@ -1,4 +1,4 @@
-package net.proselyte.springioc;
+package net.proselyte.springioc.firstProject;
 
 public class Message {
     private String message;
