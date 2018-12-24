@@ -37,6 +37,9 @@
         <fileset id="fileset4" name="Exam Config" removed="false">
           <file>file://$MODULE_DIR$/src/resources/exam-config.xml</file>
         </fileset>
+        <fileset id="fileset5" name="Collections Example" removed="false">
+          <file>file://$MODULE_DIR$/src/resources/collections-example.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
