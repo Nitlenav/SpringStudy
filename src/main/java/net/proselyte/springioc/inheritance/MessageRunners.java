@@ -11,8 +11,8 @@ public class MessageRunners {
         System.out.println(message.getMessage());
         System.out.println("\n======================================\n");
         System.out.printf("Second message.");
-    MessageToYou messageToYou = (MessageToYou)context.getBean("messageToYou");
+        MessageToYou messageToYou = (MessageToYou) context.getBean("messageToYou");
         System.out.println(messageToYou.getMessage());
         System.out.println(messageToYou.getMessageToYou());
-}
+    }
 }
