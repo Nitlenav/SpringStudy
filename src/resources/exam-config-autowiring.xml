@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="exam"
+          class="net.proselyte.springioc.autowiring.Exam" autowire="byType">
+        <property name="subject" value="Computer science"/>
+    </bean>
+
+    <bean id="exams"
+          class="net.proselyte.springioc.autowiring.Exam" autowire="byName">
+        <property name="subject" value="Computer sciencest Technology"/>
+    </bean>
+
+
+    <!--При связывании через autowire="byName", перемення а классе Exam должна иметь одно и тоже имя что и ID или NAME в подставляемой переменной-->
+    <!--При связывании через autowire="byType", перемення а классе Exam должна иметь одн и тотже тип данных в подставляемой переменной-->
+    <bean id="answerChecker" class = "net.proselyte.springioc.autowiring.AnswerChecker"></bean>
+
+</beans>
