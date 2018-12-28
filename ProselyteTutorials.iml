@@ -43,6 +43,9 @@
         <fileset id="fileset6" name="Exam Config Autowiring" removed="false">
           <file>file://$MODULE_DIR$/src/resources/exam-config-autowiring.xml</file>
         </fileset>
+        <fileset id="fileset7" name="Exam Config AutowiringConstructor" removed="false">
+          <file>file://$MODULE_DIR$/src/resources/exam-config-autowiringConstructor.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
