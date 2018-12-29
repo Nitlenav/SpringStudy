@@ -6,9 +6,13 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="exam" class="net.proselyte.springioc.autoConstructor.Exam"
-    autowire="constructor">
-        <constructor-arg value="Computer science"/>
-        <property name="subject" value="New String"/>
+        autowire="constructor" >
+        <constructor-arg value="answerChecker"/>
+        <property name="subject" value="Computer Science"/>
+        <property name="answerChecker">
+            <bean class="net.proselyte.springioc.autoConstructor.AnswerChecker"/>
+        </property>
+
     </bean>
 
     <bean id="answerChecker" class = "net.proselyte.springioc.autoConstructor.AnswerChecker"></bean>

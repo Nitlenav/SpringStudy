@@ -1,16 +1,13 @@
-package net.proselyte.springioc.autoConstructor;
+package net.proselyte.springioc.anatationAutowired;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Exam {
     private AnswerChecker answerChecker;
-    private String subject;
 
-    public Exam(AnswerChecker answerChecker, String s) {
+    @Autowired
+    public Exam(AnswerChecker answerChecker) {
         this.answerChecker = answerChecker;
-        this.subject = s;
-    }
-
-    public Exam() {
-
     }
 
     public AnswerChecker getAnswerChecker() {
@@ -20,14 +17,6 @@ public class Exam {
     public void setAnswerChecker(AnswerChecker answerChecker) {
         System.out.println("We just set Answer Checker using setter.");
         this.answerChecker = answerChecker;
-    }
-
-    public String getSubject() {
-        return subject;
-    }
-
-    public void setSubject(String subject) {
-        this.subject = subject;
     }
 
     public void examCheck() {

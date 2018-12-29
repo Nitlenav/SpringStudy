@@ -46,6 +46,12 @@
         <fileset id="fileset7" name="Exam Config AutowiringConstructor" removed="false">
           <file>file://$MODULE_DIR$/src/resources/exam-config-autowiringConstructor.xml</file>
         </fileset>
+        <fileset id="fileset8" name="AnotationConfig" removed="false">
+          <file>file://$MODULE_DIR$/src/resources/anotationConfig.xml</file>
+        </fileset>
+        <fileset id="fileset9" name="AnotationConfigAutowired" removed="false">
+          <file>file://$MODULE_DIR$/src/resources/anotationConfigAutowired.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
