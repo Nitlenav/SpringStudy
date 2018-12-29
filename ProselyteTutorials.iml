@@ -52,6 +52,9 @@
         <fileset id="fileset9" name="AnotationConfigAutowired" removed="false">
           <file>file://$MODULE_DIR$/src/resources/anotationConfigAutowired.xml</file>
         </fileset>
+        <fileset id="fileset10" name="AnotationConfigQualifier" removed="false">
+          <file>file://$MODULE_DIR$/src/resources/anotationConfigQualifier.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
