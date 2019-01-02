@@ -1,6 +1,7 @@
 package net.proselyte.springioc.annotationRunnerQualified;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Developer {
     private String name;

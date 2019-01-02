@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DeveloperRunner {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("anotation-qualifier.xml/anotationQualifier.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("anotationQualifier.xml");
         Developer developer = (Developer)context.getBean("developer");
         System.out.println(developer);
     }

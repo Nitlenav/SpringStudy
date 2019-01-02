@@ -46,19 +46,19 @@
         <fileset id="fileset7" name="Exam Config AutowiringConstructor" removed="false">
           <file>file://$MODULE_DIR$/src/resources/exam-config-autowiringConstructor.xml</file>
         </fileset>
-        <fileset id="fileset8" name="AnotationConfig" removed="false">
-          <file>file://$MODULE_DIR$/src/resources/anotationConfig.xml</file>
-        </fileset>
         <fileset id="fileset9" name="AnotationConfigAutowired" removed="false">
           <file>file://$MODULE_DIR$/src/resources/anotationConfigAutowired.xml</file>
         </fileset>
         <fileset id="fileset10" name="AnotationConfigQualifier" removed="false">
           <file>file://$MODULE_DIR$/src/resources/anotationConfigQualifier.xml</file>
         </fileset>
+        <fileset id="fileset8" name="Annotation JSR250" removed="false">
+          <file>file://$MODULE_DIR$/src/resources/annotation-JSR250.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">

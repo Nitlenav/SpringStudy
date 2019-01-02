@@ -12,7 +12,7 @@
     <bean name="position" class="net.proselyte.springioc.annotationRunnerQualified.Position"/>
 
     <bean id="netJavaDeveloper" class="net.proselyte.springioc.annotationRunnerQualified.Developer">
-        <constructor-arg index="0" value="Developer"/>
+        <constructor-arg index="0" value="Developer NET"/>
         <constructor-arg index="1" value="3"/>
         <constructor-arg index="2" value="Net Developer"/>
     </bean>

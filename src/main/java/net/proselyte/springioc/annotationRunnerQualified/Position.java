@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Position {
     @Autowired
-    @Qualifier("javaDeveloper")
+    @Qualifier("netJavaDeveloper")
     private Developer developer;
 
     public Position(){}
