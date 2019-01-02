@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="message" class="net.proselyte.springioc.springEvent.Message">
+        <property name="message" value="This is MESSAGE"/>
+    </bean>
+
+    <bean id="startEventHAndler" class="net.proselyte.springioc.springEvent.MyStartEventHander"/>
+    <bean id="stopEventHandler" class="net.proselyte.springioc.springEvent.MyStopEventHandler"/>
+
+</beans>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+    <aop:config>
+        <aop:aspect id="log" ref="logining">
+            <aop:pointcut id="selectAll" expression="execution(* net.proselyte.springioc.aopSpringExampleXml.*.*(..))"/>
+            <aop:before pointcut-ref="selectAll" method="beforeAdvice"/>
+            <aop:after pointcut-ref="selectAll" method="afterAdvice"/>
+            <aop:after-returning pointcut-ref="selectAll" returning="object" method="afterReturningAdvice"/>
+            <aop:after-throwing pointcut-ref="selectAll" throwing="e" method="exceptionThrowAdvice"/>
+        </aop:aspect>
+    </aop:config>
+
+    <bean id="developer" class="net.proselyte.springioc.aopSpringExampleXml.Developer">
+        <property name="name" value="Vasal"/>
+        <property name="speciality" value="Java Developer"/>
+        <property name="expirience" value="3"/>
+    </bean>
+
+    <bean id="logining" class="net.proselyte.springioc.aopSpringExampleXml.Logining"/>
+</beans>
